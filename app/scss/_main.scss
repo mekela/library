@@ -4,8 +4,11 @@
 
  .header{
 	@include povh('');
-	padding: 23px 0 ;
+	padding: 23px 0 1px 0;
 	background: #fff;
+	@include mq($max-width: 992px) {
+		padding-top: 10px;
+	}
  }
  	.nav{
 		 display: flex;
@@ -336,7 +339,7 @@
 	h6{
 		color: #fff;
 		font-size: 24px;
-		font-family: $serif;
+		//font-family: $serif;
 		padding-bottom: 45px;
 		@include mq($max-width: 767px) {
 			padding-bottom: 10px;
