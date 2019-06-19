@@ -263,8 +263,6 @@ input[type=text], input[type=email], input[type=tel], input[type=search], input[
   border: 1px solid #000;
   border-radius: 3px;
   resize: none; }
-  input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=search]:focus, input[type=password]:focus, input[type=date]:focus, input[type=url]:focus, textarea:focus {
-    box-shadow: 0 0 2px #99e6f9; }
   input[type=text].red_input, input[type=email].red_input, input[type=tel].red_input, input[type=search].red_input, input[type=password].red_input, input[type=date].red_input, input[type=url].red_input, textarea.red_input {
     box-shadow: 0 0 2px  #ff2d50;
     background: #fdc4ce; }
@@ -506,13 +504,34 @@ textarea {
 .custom-select {
   color: #030303;
   font-family: Georgia;
-  font-size: 48px;
   letter-spacing: 1.2px;
-  position: relative;
-  background: url(../img/arrow.png) no-repeat right center; }
+  position: relative; }
   .custom-select small {
     font-size: 16px;
     font-weight: 400; }
+  .custom-select input, .custom-select select {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    height: 40px;
+    color: #030303;
+    font-family: Georgia;
+    font-size: 28px;
+    letter-spacing: 1.2px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background: url(../img/arrow.png) no-repeat right center;
+    line-height: 1.2;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 10px; }
+    .custom-select input::-webkit-input-placeholder, .custom-select select::-webkit-input-placeholder {
+      color: grey;
+      font-size: 18px; }
+    .custom-select input:-moz-placeholder, .custom-select select:-moz-placeholder {
+      color: grey;
+      font-size: 18px; }
 
 .top-text {
   padding-top: 90px;
@@ -677,6 +696,9 @@ textarea {
       padding: 0 3px; }
 
 /*----------end footer----------*/
+.datepicker td, .datepicker th {
+  vertical-align: middle; }
+
 @media only screen and (max-width: 1000px) {
   img {
     max-width: 100%; } }

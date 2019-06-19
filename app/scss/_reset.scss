@@ -262,7 +262,7 @@ h6{font-size:14px;}
 input[type=text], input[type=email], input[type=tel], input[type=search], input[type=password], input[type=date], input[type=url], textarea{
    @include input('');
    &:focus{
-     @include input_focus('');
+     //@include input_focus('');
    }
    &.red_input{
       box-shadow: 0 0 2px  #ff2d50;

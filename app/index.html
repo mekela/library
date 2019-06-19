@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <!--build:css css/styles.min.css-->
+  <link rel="stylesheet" href="css/bootstrap-datepicker3.standalone.css">
   <link rel="stylesheet" href="css/slick.css">
   <link rel="stylesheet" href="css/bootstrap-grid.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -73,7 +74,7 @@
                 <div class="bnr__form-item">
                 <h6>Check In</h6>
                 <div class="custom-select">
-                    <span>26<small>/june</small></span>
+                    <input type="text" class="datepicker" placeholder="Choose date">
                 </div>
                 </div>
             </div>
@@ -81,7 +82,7 @@
                 <div class="bnr__form-item">
                 <h6>Check Out</h6>
                 <div class="custom-select">
-                    <span>26<small>/june</small></span>
+                    <input type="text" class="datepicker" placeholder="Choose date">
                 </div>
                 </div>
             </div>
@@ -89,7 +90,11 @@
                 <div class="bnr__form-item">
                 <h6>Quest</h6>
                 <div class="custom-select">
-                    <span>03</span>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
                 </div>
                 </div>
             </div>
@@ -271,6 +276,7 @@
 <script src="js/jquery.js"></script> 
 <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 <!--build:js js/main.min.js -->
+<script src="js/bootstrap-datepicker.js"></script>
 <script src="js/slick.js"></script>
 <!-- endbuild -->
 <script src="js/common.js"></script>

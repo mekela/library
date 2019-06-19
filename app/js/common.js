@@ -8,4 +8,9 @@ $(document).ready(function() {
 	$( ".nav__close button" ).click(function() {
 		$( ".nav" ).removeClass( "active" );
 	});
+
+	//date
+	$('.datepicker').datepicker({
+		format: 'dd/M'
+	});
 });

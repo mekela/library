@@ -175,13 +175,33 @@
 	 	.custom-select{
 			color: #030303;
 			font-family: $serif;
-			font-size: 48px;
+			//font-size: 48px;
 			letter-spacing: 1.2px;
 			position: relative;
-			background: url(../img/arrow.png) no-repeat right center;
+			//background: url(../img/arrow.png) no-repeat right center;
 			small{
 				font-size: 16px;
 				font-weight: 400;
+			}
+			input, select{
+				width: 100%;
+				border:none;
+				box-shadow: none;
+				outline: none;
+				height: 40px;
+				color: #030303;
+				font-family: $serif;
+				font-size: 28px;
+				letter-spacing: 1.2px;
+				padding-right: 20px;
+				box-sizing: border-box;
+				background: url(../img/arrow.png) no-repeat right center;
+				line-height: 1.2;
+				-webkit-appearance: none;
+				appearance: none;
+				margin-top: 10px;
+				&::-webkit-input-placeholder {color: grey; font-size: 18px;}
+				&:-moz-placeholder {color: grey; font-size: 18px;}
 			}
 		 }
 		 .top-text{
@@ -376,3 +396,9 @@
  }
 
 /*----------end footer----------*/
+
+.datepicker {
+	td, th{
+	vertical-align: middle;
+	}
+}
